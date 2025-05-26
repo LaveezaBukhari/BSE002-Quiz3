@@ -5,10 +5,10 @@ pipeline {
       steps { checkout scm }
     }
     stage('Compile') {
-      steps { sh 'javac HelloWorld.java' }
+      steps { bat 'javac HelloWorld.java' }
     }
     stage('Run') {
-      steps { sh 'java HelloWorld' }
+      steps { bat 'java HelloWorld' }
     }
   }
 }
