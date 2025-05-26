@@ -2,6 +2,6 @@ pipeline {
   agent any
   stages {
     stage('Checkout')   { steps { checkout scm } }
-    stage('Run Python') { steps { sh 'python3 script.py' } }
+    stage('Run Python') { steps { bat 'python3 script.py' } }
   }
 }
